@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "BINUS Logbook Uploader",
+  "version": "1.0.0",
+  "description": "Upload daily logbook entries from a CSV file to the BINUS Activity Enrichment system.",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://activity-enrichment.apps.binus.ac.id/LearningPlan/StudentIndex"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
