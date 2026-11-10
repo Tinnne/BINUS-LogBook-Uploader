@@ -10,7 +10,8 @@
   "content_scripts": [
     {
       "matches": [
-        "https://activity-enrichment.apps.binus.ac.id/LearningPlan/StudentIndex"
+        "https://activity-enrichment.apps.binus.ac.id/LearningPlan/StudentIndex",
+        "https://activity-enrichment.apps.binus.ac.id/LearningPlan/StudentIndex#"
       ],
       "js": ["content.js"],
       "run_at": "document_idle"
